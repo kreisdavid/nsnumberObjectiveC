@@ -10,6 +10,17 @@
 
 int main()
 {
-    NSLog(@"Hello World");
+    NSNumber *mike;
+    mike = [[NSNumber alloc] initWithInt:23];
+    NSLog(@"mike %@", mike);
+    
+    mike = @45;
+    NSLog(@"mike %@", mike);
+    
+    NSNumber *pi = @3.14;
+    NSLog(@"pi %@", pi);
+    
+    NSNumber *fancy = [NSNumber numberWithFloat:123.321];
+    NSLog(@"fancy %@", fancy);
     return 0;
 }
